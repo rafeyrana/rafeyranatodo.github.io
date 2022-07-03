@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="top" >
+        <form onSubmit="addTask()" name="myForm" action="">
+        <h1 ><a href="index.html" id="to_do">My To Do List</a></h1>
+        <input name="task" type="text" id="input" placeholder="Enter Task" onClick="this.setSelectionRange(0, this.value.length)">
+        <button id="add" ><i class="fa-solid fa-plus"></i></button>
+   </form>
+    </div>
+   <div id="tasks">
+    <ul id="task_list">
+       
+    </ul>
+   </div>
+   <div class="btn"><button id="bottom" onClick="deleteAll()"> Clear List  <i class="fa-solid fa-trash"></i></button></div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+    <script src="code.js"></script>
+    <script src="https://kit.fontawesome.com/5af2fb24e8.js" crossorigin="anonymous"></script>
+</body>
+</html>

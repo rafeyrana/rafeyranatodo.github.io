@@ -1,0 +1,318 @@
+body {
+  background-image: url("beige.png");
+  font-family: Georgia, serif;
+}
+
+.top {
+  text-align: center;
+}
+#to_do {
+  color: White;
+  font-size: 3rem;
+  text-decoration: none;
+}
+#input {
+  width: 53vw;
+  height: 1.8vw;
+  margin-top: 1%;
+  border-radius: 6px;
+  background-color: rgba(246, 204, 159, 0.902);
+  border: 1px solid rgba(165, 42, 42, 0.182);
+  color: white;
+  font-size: large;
+  padding: 1%;
+  box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+  -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  transition: all 0.2s ease-in-out;
+}
+#input::placeholder {
+  color: white;
+}
+
+#input:focus,
+textarea:focus {
+  outline: #e5ba8f;
+  background-color: rgb(255, 222, 187);
+  box-shadow: 0px 1px 1px 3px rgba(137, 115, 115, 0.75);
+  -webkit-box-shadow: 0px 1px 0px 3px rgba(137, 115, 115, 0.75);
+  -moz-box-shadow: 0px 1px 1px 3px rgba(137, 115, 115, 0.75);
+  transform: scale(1.01);
+}
+
+#tasks {
+  position: absolute;
+  background-color: rgba(246, 204, 159, 0.902);
+  width: 60%;
+  left: 20%;
+  top: 34%;
+  min-height: 50vh;
+  padding: 0%;
+  border: 1px solid rgba(165, 42, 42, 0.182);
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+  -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+}
+
+#tasks > ul {
+  padding: 0%;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  border-radius: inherit;
+}
+#tasks ul li {
+  padding: 0.9rem 1rem 0.9rem 1rem;
+  cursor: pointer;
+  color: white;
+  font-size: medium;
+  word-break: break-all;
+  transition: all 0.2s ease-in-out;
+}
+#tasks ul li:hover {
+  background-color: rgb(255, 222, 187);
+  border-radius: inherit;
+  color: white;
+  border: 1px solid rgba(165, 42, 42, 0.182);
+  padding: 1.1rem 1rem 1.1rem 1rem;
+  font-size: medium;
+  word-break: break-all;
+}
+
+#tasks ul li i {
+  color: rgb(223, 107, 107);
+  transition: all 0.2s ease-in-out;
+}
+#tasks ul li i:hover {
+  color: rgb(250, 70, 70);
+  transform: scale(1.1);
+}
+#add {
+  color: white;
+  border: 1px solid rgba(165, 42, 42, 0.182);
+  background-color: rgba(246, 204, 159, 0.902);
+  border-radius: 6px;
+  font-size: large;
+  margin-left: 1%;
+  padding: 1.1%;
+  box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+  -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+#add:hover {
+  color: white;
+  border: 1px solid rgba(165, 42, 42, 0.182);
+  color: white;
+  background-color: rgb(255, 222, 187);
+  border-radius: 6px;
+  font-size: large;
+  margin-left: 1%;
+  padding: 1.1%;
+  box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+  -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.word-break {
+  word-break: break-all;
+  margin-right: 0.25%;
+}
+.btn
+{
+    text-align: center;
+    margin-top:1.5%; 
+    
+}
+#bottom
+{
+    color: white;
+   width: 10vw;
+  border: 1px solid rgba(165, 42, 42, 0.182);
+  background-color: rgba(246, 204, 159, 0.902);
+  border-radius: 6px;
+  font-size: large;
+  margin-left: 1%;
+  padding: .75%;
+  box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+  -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+#bottom:hover {
+    border: 1px solid rgba(165, 42, 42, 0.182);
+    color: rgb(250, 70, 70);
+    background-color: rgb(255, 222, 187);
+    border-radius: 6px;
+    font-size: large;
+    margin-left: 1%;
+    padding: .75%;
+    box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+    -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+    -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url("beige.png");
+    font-family: Georgia, serif;
+  }
+
+  .top {
+    text-align: center;
+  }
+  #to_do {
+    color: White;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+  #input {
+    width: 70vw;
+    height: 5.5vw;
+    margin-top: 1%;
+    border-radius: 6px;
+    background-color: #e5ba8f;
+    border: 1px solid rgba(165, 42, 42, 0.182);
+    color: white;
+    font-size: large;
+    padding: 1%;
+    box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+    -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+    -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  }
+  #input::placeholder {
+    color: white;
+  }
+
+  #input:focus,
+  textarea:focus {
+    outline: #e5ba8f;
+    background-color: rgb(255, 222, 187);
+    box-shadow: 0px 1px 1px 3px rgba(137, 115, 115, 0.75);
+    -webkit-box-shadow: 0px 1px 0px 3px rgba(137, 115, 115, 0.75);
+    -moz-box-shadow: 0px 1px 1px 3px rgba(137, 115, 115, 0.75);
+  }
+
+  #tasks {
+    position: absolute;
+    background-color: #e5ba8f;
+    
+    min-height: 50vh;
+    padding: 0%;
+    border: 1px solid rgba(165, 42, 42, 0.182);
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+    -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+    -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  }
+
+  #tasks > ul {
+    padding: 0%;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    border-radius: inherit;
+  }
+  #tasks ul li {
+    padding: 0.9rem 1rem 0.9rem 1rem;
+    cursor: pointer;
+    color: white;
+    font-size: medium;
+    word-break: break-all;
+  }
+  #tasks ul li:hover {
+    background-color: rgb(255, 222, 187);
+    border-radius: inherit;
+    color: white;
+    border: 1px solid rgba(165, 42, 42, 0.182);
+    padding: 1.1rem 1rem 1.1rem 1rem;
+    font-size: medium;
+    word-break: break-all;
+  }
+
+  #tasks ul li i {
+    color: rgb(223, 107, 107);
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 20%;
+  }
+  #tasks ul li i:hover {
+    color: rgb(250, 70, 70);
+    transform: scale(1.1);
+  }
+  #add {
+    border: 1px solid rgba(165, 42, 42, 0.182);
+    color: white;
+    background-color: rgba(246, 204, 159, 0.902);
+    border-radius: 6px;
+    font-size: large;
+    margin-left: 2%;
+    padding: 1.1%;
+    box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+    -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+    -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  #add:active {
+    color: white;
+    border: 1px solid rgba(165, 42, 42, 0.182);
+    color: white;
+    background-color: rgba(246, 204, 159, 0.902);
+    border-radius: 6px;
+    font-size: large;
+    margin-left: 1%;
+    padding: 1.1%;
+    box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+    -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+    -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .btn
+{
+    text-align: center;
+    margin-top:7%; 
+    
+}
+#bottom
+{
+    color: white;
+   width: 30vw;
+  
+  border: 1px solid rgba(165, 42, 42, 0.182);
+  background-color: rgba(246, 204, 159, 0.902);
+  border-radius: 6px;
+  font-size: large;
+  margin-left: 1%;
+  padding: .75%;
+  box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+  -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+#bottom::after {
+    border: 1px solid rgba(165, 42, 42, 0.182);
+    color: rgb(250, 70, 70);
+    background-color: rgb(255, 222, 187);
+    border-radius: 6px;
+    font-size: large;
+    margin-left: 1%;
+    padding: .75%;
+    box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+    -webkit-box-shadow: 0px 1px 0px 3px rgba(122, 103, 103, 0.75);
+    -moz-box-shadow: 0px 1px 1px 3px rgba(122, 103, 103, 0.75);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+}
